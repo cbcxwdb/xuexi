@@ -43,6 +43,11 @@ body {
   font-size: 56px;
   color: #2b3a67;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.avatar:hover {
+  transform: scale(1.1);
 }
 
 /* 名字 */

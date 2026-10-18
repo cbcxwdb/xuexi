@@ -23,7 +23,7 @@
       目标是，在明年实训前能成为一名能独立交付ai工具的前端实习生。
     </p>
     <div class="skills">
-      <h2>我的技能</h2>
+      <h2>我的技能树</h2>
       <ul>
         <li>HTML</li>
         <li>CSS</li>
@@ -35,9 +35,26 @@
     <button class="btn">点我看看</button>
   </div>
   <script>
-    document.querySelector('.btn').addEventListener('click', function () {
-      alert('欢迎来到我的个人主页！');
-    });
+    (function () {
+      // 适合暗色主题页面的精选配色
+      var colors = [
+        '#1a1a2e', // 深海蓝
+        '#16213e', // 午夜蓝
+        '#0f3460', // 宝石蓝
+        '#2d3436', // 深炭灰
+        '#1e272e', // 暗石板色
+        '#2c3e50', // 灰蓝色
+        '#1b1b2f', // 暗紫蓝
+        '#000000'  // 纯黑
+      ];
+      var index = 0;
+
+      document.querySelector('.btn').addEventListener('click', function () {
+        alert('欢迎来到我的个人主页！');
+        document.body.style.background = colors[index];
+        index = (index + 1) % colors.length;
+      });
+    })();
   </script>
 </body>
 
