@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>我的个人主页</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="card">
+    <!-- 占位头像：用 emoji 代替图片，方便学习 -->
+    <div class="avatar" title="我的头像">🧑‍💻</div>
+
+    <!-- 你的名字 -->
+    <h1 class="name">lhh</h1>
+
+    <!-- 一句话简介 -->
+    <p class="intro">计算机科学与技术的专升本在读学生
+      正在从新学习前端开发，并与ai结合使用，
+      路线是HTML/CSS/JS->React->node.js
+      目标是，在明年实训前能成为一名能独立交付ai工具的前端实习生。
+    </p>
+    <div class="skills">
+      <h2>我的技能</h2>
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript(正在学习)</li>
+        <li>AI 工具应用</li>
+      </ul>
+    </div>
+    <!-- 按钮 -->
+    <button class="btn">点我看看</button>
+  </div>
+  <script>
+    document.querySelector('.btn').addEventListener('click', function () {
+      alert('欢迎来到我的个人主页！');
+    });
+  </script>
+</body>
+
+</html>

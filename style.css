@@ -1,0 +1,106 @@
+/* 全局重置，去掉浏览器默认边距 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* body 作为外层容器，用 flex 让内容垂直+水平居中 */
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #1f2a4a 0%, #3a5a8c 100%);
+  font-family: "Microsoft YaHei", "PingFang SC", sans-serif;
+  color: #ffffff;
+}
+
+/* 卡片容器：放头像、名字、简介 */
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  text-align: center;
+  padding: 40px 30px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  max-width: 360px;
+  width: 90%;
+}
+
+/* 占位头像 */
+.avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 56px;
+  color: #2b3a67;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* 名字 */
+.name {
+  font-size: 32px;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+
+/* 一句话简介 */
+.intro {
+  font-size: 18px;
+  color: #d6ddf0;
+  line-height: 1.6;
+}
+
+/* 技能列表 */
+.skills {
+  text-align: center;
+  width: 100%;
+}
+
+.skills h2 {
+  font-size: 20px;
+  margin-bottom: 12px;
+  color: #e8ecf4;
+  letter-spacing: 2px;
+}
+
+.skills ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.skills ul li {
+  font-size: 16px;
+  color: #c5cee0;
+  line-height: 1.8;
+  padding: 4px 0;
+}
+
+/* 按钮 */
+.btn {
+  background: rgba(255, 255, 255, 0.15);
+  color: #e8ecf4;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  padding: 10px 32px;
+  border-radius: 25px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  letter-spacing: 2px;
+}
+
+.btn:hover {
+  background: rgba(255, 255, 255, 0.25);
+  border-color: rgba(255, 255, 255, 0.4);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
