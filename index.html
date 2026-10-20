@@ -25,10 +25,6 @@
     <div class="skills">
       <h2>我的技能树</h2>
       <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript(正在学习)</li>
-        <li>AI 工具应用</li>
       </ul>
     </div>
     <!-- 按钮 -->
@@ -55,6 +51,14 @@
         index = (index + 1) % colors.length;
       });
     })();
+
+    const mySkills = ["HTML", "CSS", "JavaScript", "AI 工具应用", "React"];
+    const ulElement = document.querySelector('.skills ul');
+    mySkills.forEach(skill => {
+      const li = document.createElement('li');
+      li.textContent = skill;
+      ulElement.appendChild(li);
+    });
   </script>
 </body>
 
